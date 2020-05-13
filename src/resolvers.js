@@ -4,7 +4,7 @@ import { authenticated, createToken } from './auth';
 
 export const resolvers = {
   Query: {
-    me: authenticated((_, __, { user }) => {
+    me:authenticated((_, __, { user }) => {
       return user;
     }),
   },
